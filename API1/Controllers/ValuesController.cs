@@ -21,6 +21,7 @@ namespace API1.Controllers
 
         
         // GET api/values
+        //testing to see if encryption works- testPassword was manually copied over from the front end
         [HttpGet]
         public IEnumerable<string> Get()
         {
@@ -68,6 +69,7 @@ namespace API1.Controllers
         }
 
         // POST api/values
+        //returns a 415 error
         [HttpPost]
         public string Post([FromBody]byte[] encryptedPassword)
         {
